@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SapaBPS App</string>
+    <string name="login_title">SapaBPS Login</string>
+    <string name="register_title">Buat Akun Baru</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Konfirmasi Password</string>
+    <string name="btn_login">MASUK</string>
+    <string name="btn_register">DAFTAR</string>
+    <string name="link_to_register">Belum punya akun? Daftar</string>
+    <string name="link_to_login">Sudah punya akun? Masuk</string>
+    <string name="welcome_message">Selamat Datang, %1$s!</string>
+    <string name="btn_logout">LOGOUT</string>
+    
+    <string name="dashboard_title">SapaBPS</string>
+    <string name="total_queue">Total Antrian: %1$d</string>
+    <string name="queue_history_title">Riwayat Antrian</string>
+    <string name="empty_queue">Belum ada antrian</string>
+
+    <string name="create_queue_title">Buat Antrian</string>
+    <string name="agency_name">Nama Instansi</string>
+    <string name="phone_number">Nomor Telepon</string>
+    <string name="visit_purpose">Tujuan Kunjungan</string>
+    <string name="btn_create_queue">BUAT ANTRIAN</string>
+    <string name="queue_created_success">Antrian berhasil dibuat!</string>
+    <string name="queue_number_format">Nomor antrian Anda: %1$s</string>
+
+    <string name="detail_queue_title">Detail Antrian</string>
+    <string name="queue_number_label">Nomor Antrian</string>
+    <string name="registration_time">Waktu Pendaftaran</string>
+
+    <string name="btn_cancel_queue">BATALKAN ANTRIAN</string>
+    <string name="btn_serve">DILAYANI</string>
+    <string name="btn_complete">SELESAI</string>
+    <string name="btn_delete_ticket">HAPUS TIKET</string>
+    <string name="confirm_cancel">Apakah Anda yakin ingin membatalkan antrian ini?</string>
+    <string name="confirm_delete">Apakah Anda yakin ingin menghapus tiket ini?</string>
+    <string name="confirm_status_change">Ubah status menjadi %1$s?</string>
+
+    <string name="qr_code_label">QR Code Tiket</string>
+    <string name="qr_code_desc">QR Code untuk daftar ulang</string>
+    <string name="btn_scan_qr">Scan QR</string>
+    <string name="scan_qr_title">Scan QR Pengunjung</string>
+    <string name="scan_qr_instruction">Arahkan kamera ke QR Code tiket pengunjung</string>
+    <string name="qr_invalid">QR Code tidak valid</string>
+    <string name="qr_ticket_not_found">Tiket tidak ditemukan</string>
+    <string name="camera_permission_required">Izin kamera diperlukan untuk scan QR</string>
+</resources>

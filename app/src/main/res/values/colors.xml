@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1565C0</color>
+    <color name="primaryDark">#0D47A1</color>
+    <color name="primaryLight">#42A5F5</color>
+    <color name="accent">#00BFA5</color>
+    <color name="bgGradientStart">#1565C0</color>
+    <color name="bgGradientEnd">#00897B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="errorColor">#D32F2F</color>
+    
+    <color name="statusMenunggu">#FFA000</color>
+    <color name="statusDilayani">#1565C0</color>
+    <color name="statusSelesai">#2E7D32</color>
+    <color name="statusBatal">#D32F2F</color>
+</resources>
