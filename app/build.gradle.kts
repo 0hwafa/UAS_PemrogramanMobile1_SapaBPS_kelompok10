@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.sapabps"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.sapabps"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
     }
@@ -33,6 +33,7 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.8.2")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.google.android.material:material:1.11.0")
+    implementation(libs.androidx.activity)
 
     // Room Database Ecosystem
     val roomVersion = "2.6.1"

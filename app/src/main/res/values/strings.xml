@@ -13,7 +13,7 @@
     <string name="link_to_login">Sudah punya akun? Masuk</string>
     <string name="welcome_message">Selamat Datang, %1$s!</string>
     <string name="btn_logout">LOGOUT</string>
-    
+
     <string name="dashboard_title">SapaBPS</string>
     <string name="total_queue">Total Antrian: %1$d</string>
     <string name="queue_history_title">Riwayat Antrian</string>
