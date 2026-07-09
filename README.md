@@ -13,7 +13,7 @@ Proyek ini dikembangkan sebagai syarat pemenuhan tugas Ujian Akhir Semester (UAS
 
 ## 🎥 Video Penjelasan Project
 Video demonstrasi yang mencakup perkenalan anggota, demo fitur aplikasi, dan penjelasan singkat alur kode dapat dilihat melalui tautan berikut:
-**[➡️ LINKK ]**
+**[➡️ https://youtu.be/l5iI0FKnz7g ]**
 
 ## 📸 Screenshot Aplikasi
 
