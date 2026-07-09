@@ -13,7 +13,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@drawable/bg_button_blue"
             app:title="@string/create_queue_title"
             app:navigationIcon="?attr/homeAsUpIndicator"/>
     </com.google.android.material.appbar.AppBarLayout>
@@ -76,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:text="@string/btn_create_queue"
-                android:background="@drawable/bg_button_primary"
+                android:background="@drawable/bg_button_green"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:backgroundTint="@null"/>
