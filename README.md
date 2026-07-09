@@ -17,7 +17,7 @@ Video demonstrasi yang mencakup perkenalan anggota, demo fitur aplikasi, dan pen
 
 ## 📸 Screenshot Aplikasi
 
-| Halaman Welcome & Login | Halaman Dashboard User |
+| Halaman Dashboard User | Halaman Register User |
 | :---: | :---: |
 | <img src="asset/dashboard.jpg" width="250"> | <img src="asset/register.jpg" width="250"> |
 
@@ -30,4 +30,4 @@ Berikut adalah langkah-langkah untuk menjalankan aplikasi SAPA BPS secara lokal 
 1. **Clone Repository**
    Buka terminal atau command prompt, lalu jalankan perintah berikut:
    ```bash
-   git clone [Masukkan link repository github kalian di sini]
+   git clone https://github.com/0hwafa/UAS_PemrogramanMobile1_SapaBPS_kelompok10.git ```
