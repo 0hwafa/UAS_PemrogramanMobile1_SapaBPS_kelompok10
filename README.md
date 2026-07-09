@@ -19,7 +19,7 @@ Video demonstrasi yang mencakup perkenalan anggota, demo fitur aplikasi, dan pen
 
 | Halaman Welcome & Login | Halaman Dashboard User |
 | :---: | :---: |
-| <img src="[Masukkan link atau path gambar screenshot 1 di sini]" width="250"> | <img src="[Masukkan link atau path gambar screenshot 2 di sini]" width="250"> |
+| <img src="asset/dashboard.png" width="250"> | <img src="asset/register.png" width="250"> |
 
 
 
