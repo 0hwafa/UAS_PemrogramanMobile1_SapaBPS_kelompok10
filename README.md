@@ -8,7 +8,7 @@ Proyek ini dikembangkan sebagai syarat pemenuhan tugas Ujian Akhir Semester (UAS
 | Nama | NPM | Peran |
 | :--- | :--- | :--- |
 | Asma Wafa Syahidah | 24552011347 | UI/UX Designer & Frontend Developer |
-| Sazkia Putri Febrian | [NPM Anggota 2] | [Backend & Database] |
+| Sazkia Putri Febrian | 24552011353 | Backend & Database |
 
 
 ## 🎥 Video Penjelasan Project
