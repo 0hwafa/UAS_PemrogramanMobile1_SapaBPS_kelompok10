@@ -3,13 +3,13 @@ package com.sapabps.ui.auth
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.textfield.TextInputEditText
 import com.sapabps.R
 import com.sapabps.data.local.AppDatabase
 import com.sapabps.data.repository.UserRepository
@@ -19,10 +19,11 @@ import kotlinx.coroutines.withContext
 
 class RegisterActivity : AppCompatActivity() {
 
-    private lateinit var etFullName: TextInputEditText
-    private lateinit var etEmail: TextInputEditText
-    private lateinit var etPassword: TextInputEditText
-    private lateinit var etConfirmPassword: TextInputEditText
+    // Ubah tipe data di sini menjadi EditText
+    private lateinit var etFullName: EditText
+    private lateinit var etEmail: EditText
+    private lateinit var etPassword: EditText
+    private lateinit var etConfirmPassword: EditText
     private lateinit var btnRegister: Button
     private lateinit var tvLoginLink: TextView
     private lateinit var progressBar: ProgressBar
@@ -49,7 +50,7 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         tvLoginLink.setOnClickListener {
-            finish() // go back to login
+            finish() // Kembali ke halaman login
         }
     }
 
@@ -63,7 +64,7 @@ class RegisterActivity : AppCompatActivity() {
             Snackbar.make(findViewById(android.R.id.content), "Semua field harus diisi", Snackbar.LENGTH_SHORT).show()
             return
         }
-        
+
         if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             Snackbar.make(findViewById(android.R.id.content), "Format email tidak valid", Snackbar.LENGTH_SHORT).show()
             return
@@ -88,7 +89,7 @@ class RegisterActivity : AppCompatActivity() {
                 setLoading(false)
                 result.onSuccess {
                     Toast.makeText(this@RegisterActivity, "Registrasi berhasil, silakan login", Toast.LENGTH_LONG).show()
-                    finish() // back to login
+                    finish() // Kembali ke login
                 }.onFailure { error ->
                     Snackbar.make(findViewById(android.R.id.content), error.message ?: "Terjadi kesalahan", Snackbar.LENGTH_LONG).show()
                 }
@@ -97,7 +98,11 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun setLoading(isLoading: Boolean) {
-        progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
-        btnRegister.isEnabled = !isLoading
+        if (::progressBar.isInitialized) {
+            progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
+        }
+        if (::btnRegister.isInitialized) {
+            btnRegister.isEnabled = !isLoading
+        }
     }
 }
