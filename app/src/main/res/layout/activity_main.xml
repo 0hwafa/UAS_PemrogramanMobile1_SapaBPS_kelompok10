@@ -3,66 +3,104 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="@drawable/dashboard">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+         />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:title="@string/dashboard_title"
-            app:menu="@menu/menu_main" />
-    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingHorizontal="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="home"
+            android:textColor="#308BCE"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/btnLogout"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_logout"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:tint="#308BCE" />
+    </RelativeLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:layout_marginTop="160dp"
+        android:background="@drawable/bg_sheet_top_rounded"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/bg_header_card"
-                android:padding="24dp">
+                android:background="@drawable/bg_button_green"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="30dp"
+                android:padding="24dp"
+                android:elevation="40dp">
 
-                <TextView
-                    android:id="@+id/tvWelcome"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Selamat Datang,"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:orientation="vertical"
+                    android:layout_toStartOf="@+id/ivHand"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp">
 
-                <TextView
-                    android:id="@+id/tvRole"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Role: User"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
-                    android:layout_marginTop="4dp" />
+                    <TextView
+                        android:id="@+id/tvWelcome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Halo, User!"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/tvTotalQueue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Total Antrian: 0"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    android:layout_marginTop="16dp" />
-            </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvRole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selamat datang\ndi aplikasi SAPA BPS."
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:id="@+id/tvTotalQueue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Antrian: 0"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivHand"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/icon_greet"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -70,8 +108,10 @@
                 android:text="@string/queue_history_title"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/textColorPrimary"
-                android:layout_margin="16dp" />
+                android:textColor="#333333"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp" />
 
             <TextView
                 android:id="@+id/tvEmptyState"
@@ -79,7 +119,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/empty_queue"
                 android:textAlignment="center"
-                android:textColor="@color/textColorSecondary"
+                android:textColor="#888888"
                 android:layout_marginTop="32dp"
                 android:visibility="gone" />
 
